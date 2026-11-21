@@ -3,26 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MECA Advisory | Commercial advisory for technology services firms</title>
-  <meta name="description" content="Senior commercial advisory for software and IT services firms: account growth, pricing, client services and fractional leadership. US, Canada, Europe and Latin America." />
+  <title>MECA Advisory | Commercial leadership for technology services in the AI era</title>
+  <meta name="description" content="Senior commercial advisory for software and IT services firms: AI-era offering, retention and expansion, pricing and margin, and fractional commercial leadership." />
   <meta name="theme-color" content="#0f1c29" />
   <link rel="canonical" href="https://mecaadvisory.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mecaadvisory.com/" />
-  <meta property="og:title" content="MECA Advisory | Profitable growth for technology services firms" />
-  <meta property="og:description" content="Senior commercial advisory for software and IT services firms: account growth, pricing, client services and fractional leadership." />
+  <meta property="og:title" content="MECA Advisory | Commercial leadership for technology services in the AI era" />
+  <meta property="og:description" content="Senior commercial advisory for software and IT services firms: AI-era offering, retention and expansion, pricing and margin, and fractional commercial leadership." />
   <meta property="og:image" content="https://mecaadvisory.com/assets/og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root{
       --navy:#0f1c29;--navy-2:#14263a;--navy-3:#1a2f42;
       --ivory:#f6f2ea;--sand:#ece6db;--gold:#c9a96e;--gold-soft:#d9c7a3;
-      --ink:#16222d;--body:#46525c;--muted:#6b757d;--line:#d8d0c2;
-      --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+      --ink:#16222d;--body:#46525c;--line:#d8d0c2;
+      --display:Montserrat,ui-sans-serif,-apple-system,"Segoe UI",sans-serif;
       --sans:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
     }
     *{box-sizing:border-box}
@@ -55,33 +55,37 @@
     .btn-ghost:hover{background:transparent;color:var(--gold-soft);border-color:var(--gold-soft)}
     .nav .btn{padding:10px 18px;font-size:13px}
 
-    /* Type */
-    h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;letter-spacing:-.01em}
+    /* Type: Montserrat for headings and labels, Inter for body */
+    h1,h2,h3{font-family:var(--display);font-weight:300;line-height:1.12;margin:0;letter-spacing:-.015em}
+    h2{font-size:clamp(32px,3.6vw,48px)}
     p{margin:0 0 1em}
-    .eyebrow{display:inline-block;text-transform:uppercase;letter-spacing:.22em;font-size:11.5px;font-weight:600;color:#9a7d4c;margin-bottom:18px}
+    .gold{color:var(--gold-soft)}
+    .eyebrow{display:flex;align-items:center;gap:14px;font-family:var(--display);text-transform:uppercase;letter-spacing:.22em;font-size:11.5px;font-weight:600;color:#9a7d4c;margin-bottom:20px}
     .dark .eyebrow{color:var(--gold)}
-    h2{font-size:clamp(36px,4.2vw,56px)}
-    .section-intro{max-width:620px;font-size:18px;color:var(--body)}
+    .wave{width:44px;height:12px;flex:none}
+    .wave path{fill:none;stroke:var(--gold);stroke-width:1.5;stroke-linecap:round}
+    .section-intro{max-width:600px;font-size:18px;color:var(--body)}
 
     /* Hero */
     .hero{position:relative;background:var(--navy);color:var(--ivory);overflow:hidden}
     .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:min(46vw,440px);background:url("assets/hero-ocean.jpg") center bottom/cover no-repeat;opacity:.9;
       -webkit-mask-image:linear-gradient(to bottom,transparent,#000 45%);mask-image:linear-gradient(to bottom,transparent,#000 45%)}
     .hero-inner{position:relative;z-index:1;padding:110px 0 clamp(200px,24vw,320px)}
-    .hero h1{font-size:clamp(46px,6.4vw,88px);max-width:900px;font-weight:500}
-    .hero h1 em{font-style:italic;color:var(--gold-soft)}
-    .hero .sub{font-size:clamp(17px,1.6vw,20px);color:#c4ccd2;max-width:640px;margin:28px 0 38px}
+    .hero h1{font-size:clamp(36px,4.6vw,64px);max-width:1060px;line-height:1.12}
+    .hero .sub{font-size:clamp(17px,1.6vw,19px);color:#c4ccd2;max-width:640px;margin:28px 0 38px}
     .hero-actions{display:flex;flex-wrap:wrap;gap:14px}
 
-    /* Proof strip */
-    .proof{background:var(--navy-2);color:var(--ivory);border-top:1px solid rgba(255,255,255,.07)}
-    .proof-grid{display:grid;grid-template-columns:repeat(4,1fr)}
-    .proof-item{padding:34px 26px 34px 0}
-    .proof-item+.proof-item{padding-left:26px;border-left:1px solid rgba(255,255,255,.1)}
-    .proof-num{font-family:var(--serif);font-size:40px;line-height:1;color:var(--gold-soft)}
-    .proof-label{font-size:13.5px;color:#aeb8bf;margin-top:10px;line-height:1.5}
+    /* Focus strip */
+    .focus{background:var(--navy-2);color:var(--ivory);border-top:1px solid rgba(255,255,255,.07)}
+    .focus-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+    .focus-item{padding:30px 26px 30px 0;display:flex;gap:16px;align-items:flex-start;transition:background .2s}
+    .focus-item+.focus-item{padding-left:26px;border-left:1px solid rgba(255,255,255,.1)}
+    .focus-item:hover .t{color:var(--gold-soft)}
+    .focus-item .k{font-family:var(--display);font-size:11px;letter-spacing:.18em;color:var(--gold);font-weight:600;padding-top:4px}
+    .focus-item .t{font-family:var(--display);font-size:16px;font-weight:500;line-height:1.35;transition:color .2s}
+    .focus-item .d{font-size:13.5px;color:#aeb8bf;margin-top:6px;line-height:1.5}
 
-    section{padding:112px 0}
+    section{padding:104px 0}
 
     /* Challenges */
     .challenges-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}
@@ -91,27 +95,12 @@
 
     /* Services */
     .services{background:var(--sand)}
-    .services-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:56px}
+    .services-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:52px}
     .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-    .service{background:var(--ivory);padding:40px 40px 36px;border:1px solid #e1d9cb;display:flex;flex-direction:column}
-    .service .tag{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#9a7d4c;font-weight:600}
-    .service h3{font-size:32px;margin:14px 0 14px}
-    .service p{color:var(--body);font-size:15.5px}
-    .service ul{margin:6px 0 0;padding:0;list-style:none;font-size:14.5px;color:#36444f}
-    .service li{padding:7px 0 7px 22px;position:relative;border-top:1px solid #ebe4d7}
-    .service li::before{content:"";position:absolute;left:0;top:17px;width:10px;height:1.5px;background:var(--gold)}
-
-    /* Approach */
-    .dark{background:var(--navy);color:var(--ivory)}
-    .approach-head{max-width:700px;margin-bottom:60px}
-    .approach-head p{color:#b9c3ca;font-size:18px}
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(255,255,255,.14)}
-    .step{padding:34px 34px 10px 0}
-    .step+.step{padding-left:34px;border-left:1px solid rgba(255,255,255,.14)}
-    .step .n{font-family:var(--serif);font-size:20px;color:var(--gold)}
-    .step h3{font-size:30px;margin:10px 0 12px}
-    .step .time{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8e9aa3;margin-bottom:16px}
-    .step p{color:#c0c9cf;font-size:15.5px}
+    .service{background:var(--ivory);padding:40px 40px 36px;border:1px solid #e1d9cb}
+    .service .tag{font-family:var(--display);font-size:11.5px;letter-spacing:.18em;color:#9a7d4c;font-weight:600}
+    .service h3{font-size:27px;font-weight:400;margin:14px 0 16px}
+    .service p{color:var(--body);font-size:15.5px;margin:0}
 
     /* Who + About */
     .who-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}
@@ -121,14 +110,15 @@
     .fit div::before{content:"";position:absolute;left:0;top:12px;width:9px;height:1.5px;background:var(--gold)}
     .about{background:var(--navy-3);color:var(--ivory);padding:52px;align-self:start}
     .about .eyebrow{color:var(--gold)}
-    .about h3{font-size:34px;margin-bottom:18px}
+    .about h3{font-size:30px;margin-bottom:18px}
     .about p{color:#c3ccd2;font-size:16px}
-    .quote{font-family:var(--serif);font-style:italic;font-size:26px;line-height:1.3;color:var(--gold-soft);border-top:1px solid rgba(255,255,255,.14);padding-top:22px;margin-top:26px}
+    .tagline{font-family:var(--display);font-weight:300;font-size:24px;line-height:1.3;color:var(--gold-soft);border-top:1px solid rgba(255,255,255,.14);padding-top:22px;margin-top:26px}
 
     /* Contact */
     .contact{position:relative;background:var(--navy);color:var(--ivory);text-align:center;overflow:hidden}
     .contact::before{content:"";position:absolute;inset:0;background:url("assets/hero-ocean.jpg") center 70%/cover no-repeat;opacity:.28}
     .contact .container{position:relative}
+    .contact .eyebrow{justify-content:center}
     .contact h2{max-width:820px;margin:0 auto 22px}
     .contact p{max-width:600px;margin:0 auto 36px;color:#c7cfd4;font-size:18px}
     .contact .email{display:block;margin-top:22px;font-size:14px;color:var(--gold-soft)}
@@ -136,36 +126,36 @@
     footer{background:#0a141d;color:#8f9ca5;padding:30px 0;font-size:13px}
     .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
     .footer-inner a:hover{color:var(--gold-soft)}
-    .foot-brand{color:var(--ivory);letter-spacing:.3em;font-size:12px}
+    .foot-brand{font-family:var(--display);color:var(--ivory);letter-spacing:.3em;font-size:12px}
 
     @media (max-width:980px){
       .nav-links .nl{display:none}
       .challenges-grid,.who-grid{grid-template-columns:1fr;gap:44px}
       .service-grid{grid-template-columns:1fr}
-      .steps{grid-template-columns:1fr}
-      .step,.step+.step{padding:28px 0 6px;border-left:0;border-bottom:1px solid rgba(255,255,255,.14)}
-      .proof-grid{grid-template-columns:repeat(2,1fr)}
-      .proof-item,.proof-item+.proof-item{padding:26px 18px 26px 0;border-left:0}
-      .proof-item:nth-child(even){padding-left:18px;border-left:1px solid rgba(255,255,255,.1)}
-      .proof-item:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.1)}
+      .focus-grid{grid-template-columns:repeat(2,1fr)}
+      .focus-item,.focus-item+.focus-item{padding:24px 16px 24px 0;border-left:0}
+      .focus-item:nth-child(even){padding-left:16px;border-left:1px solid rgba(255,255,255,.1)}
+      .focus-item:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.1)}
       .services-head{display:block}
       .services-head .section-intro{margin-top:20px}
     }
     @media (max-width:600px){
       .container{width:calc(100% - 36px)}
       .nav{height:66px;gap:12px}
-      .logo img{width:92px}
+      .logo img{width:96px}
       .nav-links{gap:12px}
       .nav .btn{display:none}
       .hero-inner{padding:64px 0 210px}
-      section{padding:76px 0}
-      .service{padding:30px 24px 26px}
-      .service h3{font-size:28px}
+      section{padding:72px 0}
+      .service{padding:30px 24px 28px}
+      .service h3{font-size:24px}
       .about{padding:34px 26px}
-      .proof-num{font-size:36px}
+      .focus-grid{grid-template-columns:1fr}
+      .focus-item,.focus-item+.focus-item,.focus-item:nth-child(even){padding:20px 0;border-left:0;border-bottom:1px solid rgba(255,255,255,.1)}
+      .focus-item:last-child{border-bottom:0}
       .hero-actions .btn{width:100%;justify-content:center}
     }
-    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.focus-item .t{transition:none}}
   </style>
 </head>
 <body>
@@ -175,7 +165,6 @@
     <a class="logo" href="#top" aria-label="MECA Advisory"><img src="assets/meca-logo.png" alt="MECA Advisory" width="360" height="166" /></a>
     <nav class="nav-links" aria-label="Main">
       <a class="nl" href="#services"><span lang="en">Services</span><span lang="es">Servicios</span></a>
-      <a class="nl" href="#approach"><span lang="en">Approach</span><span lang="es">Enfoque</span></a>
       <a class="nl" href="#who"><span lang="en">Who we help</span><span lang="es">A quién ayudamos</span></a>
       <div class="lang" role="group" aria-label="Language / Idioma">
         <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
@@ -188,7 +177,7 @@
 
 <main id="top">
 
-  <!-- HERO -->
+  <!-- 1. HERO + FOCUS STRIP -->
   <section class="hero" aria-labelledby="hero-title" style="padding:0">
     <div class="container hero-inner">
       <div class="eyebrow">
@@ -196,12 +185,12 @@
         <span lang="es">Asesoría comercial · Liderazgo fraccional</span>
       </div>
       <h1 id="hero-title">
-        <span lang="en"><em>Profitable growth</em> for technology services firms.</span>
-        <span lang="es"><em>Crecimiento rentable</em> para empresas de servicios de tecnología.</span>
+        <span lang="en">Commercial leadership for technology services <span class="gold">in the AI era.</span></span>
+        <span lang="es">Liderazgo comercial para servicios de tecnología <span class="gold">en la era de la IA.</span></span>
       </h1>
       <p class="sub">
-        <span lang="en">Senior commercial advisory for software and IT services firms. We help leadership teams expand key accounts, protect margins and build client services that scale — across the US, Europe and Latin America.</span>
-        <span lang="es">Asesoría comercial senior para empresas de software y servicios IT. Ayudamos a equipos directivos a expandir cuentas clave, proteger márgenes y construir un área de Client Services que escale, en Estados Unidos, Europa y América Latina.</span>
+        <span lang="en">Senior commercial advisory for software and IT services firms. We help leadership teams reposition their offering for AI, grow their key accounts and protect margins, across the US, Europe and Latin America.</span>
+        <span lang="es">Asesoría comercial senior para empresas de software y servicios IT. Ayudamos a equipos directivos a reposicionar su oferta para la IA, hacer crecer sus cuentas clave y proteger márgenes, en Estados Unidos, Europa y América Latina.</span>
       </p>
       <div class="hero-actions">
         <a class="btn" href="https://calendar.app.google/ktj532A66obxFgog8" target="_blank" rel="noopener"><span lang="en">Book an intro conversation</span><span lang="es">Agendá una primera conversación</span> <span aria-hidden="true">→</span></a>
@@ -210,21 +199,20 @@
     </div>
   </section>
 
-  <!-- PROOF -->
-  <div class="proof" aria-label="Experience">
-    <div class="container proof-grid">
-      <div class="proof-item"><div class="proof-num">20</div><div class="proof-label"><span lang="en">years inside technology services</span><span lang="es">años en servicios de tecnología</span></div></div>
-      <div class="proof-item"><div class="proof-num"><span lang="en">Enterprise</span><span lang="es">Enterprise</span></div><div class="proof-label"><span lang="en">and mid-market client portfolios</span><span lang="es">y mid-market: carteras de clientes</span></div></div>
-      <div class="proof-item"><div class="proof-num"><span lang="en">Operator</span><span lang="es">Operación</span></div><div class="proof-label"><span lang="en">experience, from delivery to leadership</span><span lang="es">real, de delivery a liderazgo</span></div></div>
-      <div class="proof-item"><div class="proof-num"><span lang="en">Global</span><span lang="es">Global</span></div><div class="proof-label"><span lang="en">North America, Europe and LATAM</span><span lang="es">Norteamérica, Europa y LATAM</span></div></div>
+  <div class="focus" aria-label="Focus areas">
+    <div class="container focus-grid">
+      <a class="focus-item" href="#services"><span class="k">01</span><div><div class="t"><span lang="en">AI-era offering</span><span lang="es">Oferta para la era de la IA</span></div><div class="d"><span lang="en">Package, price and sell AI services</span><span lang="es">Empaquetar, cotizar y vender servicios de IA</span></div></div></a>
+      <a class="focus-item" href="#services"><span class="k">02</span><div><div class="t"><span lang="en">Retention &amp; expansion</span><span lang="es">Retención y expansión</span></div><div class="d"><span lang="en">One motion, not two teams</span><span lang="es">Un mismo trabajo, no dos equipos</span></div></div></a>
+      <a class="focus-item" href="#services"><span class="k">03</span><div><div class="t"><span lang="en">Pricing &amp; margin</span><span lang="es">Pricing y margen</span></div><div class="d"><span lang="en">Price on value, not on discounts</span><span lang="es">Precios por valor, no por descuento</span></div></div></a>
+      <a class="focus-item" href="#services"><span class="k">04</span><div><div class="t"><span lang="en">Commercial leadership</span><span lang="es">Liderazgo comercial</span></div><div class="d"><span lang="en">Senior judgment, without a full-time hire</span><span lang="es">Criterio senior, sin una contratación full-time</span></div></div></a>
     </div>
   </div>
 
-  <!-- CHALLENGES -->
+  <!-- 2. SOUND FAMILIAR? -->
   <section aria-labelledby="ch-title">
     <div class="container challenges-grid">
       <div>
-        <div class="eyebrow"><span lang="en">Sound familiar?</span><span lang="es">¿Te suena?</span></div>
+        <div class="eyebrow"><svg class="wave" viewBox="0 0 44 12" aria-hidden="true"><path d="M1 9 C10 9 13 3 22 3 S34 9 43 5"/></svg><span lang="en">Sound familiar?</span><span lang="es">¿Te suena?</span></div>
         <h2 id="ch-title"><span lang="en">Growth has stalled where it should be easiest.</span><span lang="es">El crecimiento se frena donde debería ser más fácil.</span></h2>
         <p class="section-intro" style="margin-top:24px"><span lang="en">In services businesses, most profitable growth comes from existing clients. These are the patterns we see most often.</span><span lang="es">En empresas de servicios, el crecimiento más rentable viene de los clientes actuales. Estos son los patrones que vemos con más frecuencia.</span></p>
       </div>
@@ -238,98 +226,50 @@
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- 3. SERVICES -->
   <section class="services" id="services" aria-labelledby="sv-title">
     <div class="container">
       <div class="services-head">
         <div>
-          <div class="eyebrow"><span lang="en">How we help</span><span lang="es">Cómo ayudamos</span></div>
+          <div class="eyebrow"><svg class="wave" viewBox="0 0 44 12" aria-hidden="true"><path d="M1 9 C10 9 13 3 22 3 S34 9 43 5"/></svg><span lang="en">How we help</span><span lang="es">Cómo ayudamos</span></div>
           <h2 id="sv-title"><span lang="en">Advice built for execution.</span><span lang="es">Asesoría pensada para ejecutar.</span></h2>
         </div>
-        <p class="section-intro"><span lang="en">Focused engagements on the commercial levers that move revenue and margin. Start with a diagnostic or go straight to hands-on support.</span><span lang="es">Proyectos enfocados en las palancas comerciales que mueven facturación y margen. Se puede empezar con un diagnóstico o ir directo a acompañamiento en la ejecución.</span></p>
+        <p class="section-intro"><span lang="en">Every engagement starts with a short commercial diagnostic. Then we stay through execution.</span><span lang="es">Cada proyecto empieza con un breve diagnóstico comercial. Después acompañamos la ejecución.</span></p>
       </div>
 
       <div class="service-grid">
         <article class="service">
-          <span class="tag"><span lang="en">01 · Diagnose</span><span lang="es">01 · Diagnóstico</span></span>
-          <h3><span lang="en">Commercial Diagnostic</span><span lang="es">Diagnóstico comercial</span></h3>
-          <p><span lang="en">A fixed-scope review of where revenue and margin are being won or lost, ending in a prioritized 90-day plan.</span><span lang="es">Una revisión de alcance acotado sobre dónde se gana o se pierde facturación y margen, con un plan priorizado a 90 días.</span></p>
-          <ul>
-            <li><span lang="en">Account portfolio and expansion potential</span><span lang="es">Cartera de cuentas y potencial de expansión</span></li>
-            <li><span lang="en">Pricing, rate cards and margin by account</span><span lang="es">Pricing, tarifas y margen por cuenta</span></li>
-            <li><span lang="en">Commercial team structure and cadence</span><span lang="es">Estructura y rutinas del equipo comercial</span></li>
-          </ul>
+          <span class="tag">01</span>
+          <h3><span lang="en">AI-era offering</span><span lang="es">Oferta para la era de la IA</span></h3>
+          <p><span lang="en">Your clients are asking for AI and agentic solutions. We help you package, price and position those services, and train your commercial team to sell them with confidence.</span><span lang="es">Tus clientes están pidiendo soluciones de IA y desarrollo agéntico. Te ayudamos a empaquetar, cotizar y posicionar esos servicios, y a capacitar al equipo comercial para venderlos con seguridad.</span></p>
         </article>
 
         <article class="service">
-          <span class="tag"><span lang="en">02 · Grow</span><span lang="es">02 · Crecer</span></span>
-          <h3><span lang="en">Account Growth &amp; Pricing</span><span lang="es">Crecimiento de cuentas y pricing</span></h3>
-          <p><span lang="en">Build the playbooks and governance that turn existing clients into your most reliable growth engine.</span><span lang="es">Construir los playbooks y la gobernanza que convierten a los clientes actuales en el motor de crecimiento más confiable.</span></p>
-          <ul>
-            <li><span lang="en">Account planning, QBRs and farming playbooks</span><span lang="es">Account planning, QBRs y playbooks de farming</span></li>
-            <li><span lang="en">Pricing strategy, approvals and rate increases</span><span lang="es">Estrategia de precios, aprobaciones y aumentos de tarifa</span></li>
-            <li><span lang="en">Forecasting and pipeline discipline</span><span lang="es">Forecast y disciplina de pipeline</span></li>
-          </ul>
+          <span class="tag">02</span>
+          <h3><span lang="en">Retention and expansion, one motion</span><span lang="es">Retención y expansión, un mismo trabajo</span></h3>
+          <p><span lang="en">Keeping a client and growing a client are the same work: steady investment in the relationship that pays back in renewals and new business. We help you run them as one commercial system, not as two teams with two agendas. That includes building a proactive client success function that protects recurring revenue, drives adoption, reduces churn and surfaces the expansion already sitting in your client base.</span><span lang="es">Retener un cliente y hacerlo crecer son el mismo trabajo: una inversión constante en la relación que se traduce en renovaciones y nuevos negocios. Te ayudamos a gestionarlos como un único sistema comercial, no como dos equipos con dos agendas. Eso incluye construir un área de client success proactiva que proteja los ingresos recurrentes, impulse la adopción, reduzca el churn y detecte las oportunidades de expansión que ya existen en tu cartera de clientes.</span></p>
         </article>
 
         <article class="service">
-          <span class="tag"><span lang="en">03 · Lead</span><span lang="es">03 · Liderar</span></span>
-          <h3><span lang="en">Fractional Commercial Leadership</span><span lang="es">Liderazgo comercial fraccional</span></h3>
-          <p><span lang="en">Senior leadership, part-time, for the stage when you need executive judgment but not yet a full-time hire.</span><span lang="es">Liderazgo senior part-time, para la etapa en la que se necesita criterio ejecutivo pero todavía no una contratación full-time.</span></p>
-          <ul>
-            <li><span lang="en">Lead or rebuild the account management team</span><span lang="es">Liderar o reconstruir el equipo de account management</span></li>
-            <li><span lang="en">Align Sales, Client Services, Delivery and Staffing</span><span lang="es">Alinear Ventas, Client Services, Delivery y Staffing</span></li>
-            <li><span lang="en">Executive sponsor for strategic clients and escalations</span><span lang="es">Sponsor ejecutivo para clientes estratégicos y escalamientos</span></li>
-          </ul>
+          <span class="tag">03</span>
+          <h3><span lang="en">Pricing and margin</span><span lang="es">Pricing y margen</span></h3>
+          <p><span lang="en">Rate pressure and ad-hoc discounts erode margin quietly. We put in place rate cards, pricing governance and a clear approach to price increases, so you price on value, not on discounts.</span><span lang="es">La presión sobre las tarifas y los descuentos sin criterio erosionan el margen sin que se note. Implementamos tarifarios, gobernanza de precios y un enfoque claro para los aumentos, para que el precio refleje el valor y no el descuento.</span></p>
         </article>
 
         <article class="service">
-          <span class="tag"><span lang="en">04 · Evolve</span><span lang="es">04 · Evolucionar</span></span>
-          <h3><span lang="en">AI-Era Offering &amp; Team Training</span><span lang="es">Oferta para la era de la IA y capacitación</span></h3>
-          <p><span lang="en">Help your commercial team sell what clients are now asking for, and equip them to do it well.</span><span lang="es">Ayudar al equipo comercial a vender lo que los clientes están pidiendo hoy, y prepararlo para hacerlo bien.</span></p>
-          <ul>
-            <li><span lang="en">Positioning AI and agentic development services</span><span lang="es">Posicionamiento de servicios de IA y desarrollo agéntico</span></li>
-            <li><span lang="en">Proposal and pricing models for AI work</span><span lang="es">Modelos de propuesta y pricing para proyectos de IA</span></li>
-            <li><span lang="en">Workshops for commercial leaders</span><span lang="es">Workshops para líderes comerciales</span></li>
-          </ul>
+          <span class="tag">04</span>
+          <h3><span lang="en">Fractional commercial leadership</span><span lang="es">Liderazgo comercial fraccional</span></h3>
+          <p><span lang="en">Senior commercial leadership, part-time, for the moment the founder can't be the whole commercial team anymore. We lead the team, align Sales, Delivery and Staffing, and act as executive sponsor for your key clients.</span><span lang="es">Liderazgo comercial senior part-time, para el momento en que el fundador ya no puede ser todo el equipo comercial. Lideramos el equipo, alineamos Ventas, Delivery y Staffing, y actuamos como sponsor ejecutivo de tus clientes clave.</span></p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- APPROACH -->
-  <section class="dark" id="approach" aria-labelledby="ap-title">
-    <div class="container">
-      <div class="approach-head">
-        <div class="eyebrow"><span lang="en">Our approach</span><span lang="es">Nuestro enfoque</span></div>
-        <h2 id="ap-title"><span lang="en">Clarity first. Execution always.</span><span lang="es">Primero claridad. Siempre ejecución.</span></h2>
-        <p style="margin-top:22px"><span lang="en">We work inside the business, alongside your leadership team, not from a slide deck at a distance.</span><span lang="es">Trabajamos dentro del negocio, junto al equipo directivo, no a la distancia desde una presentación.</span></p>
-      </div>
-      <div class="steps">
-        <div class="step">
-          <div class="n">01</div>
-          <h3><span lang="en">Diagnose</span><span lang="es">Diagnosticar</span></h3>
-          <p><span lang="en">Get close to the numbers, the clients and the team. Find where revenue and margin are leaking.</span><span lang="es">Entender los números, los clientes y el equipo. Encontrar dónde se pierde facturación y margen.</span></p>
-        </div>
-        <div class="step">
-          <div class="n">02</div>
-          <h3><span lang="en">Prioritize</span><span lang="es">Priorizar</span></h3>
-          <p><span lang="en">Agree on the few moves that matter, with clear owners, targets and a realistic 90-day plan.</span><span lang="es">Acordar las pocas iniciativas que importan, con responsables, metas claras y un plan realista a 90 días.</span></p>
-        </div>
-        <div class="step">
-          <div class="n">03</div>
-          <h3><span lang="en">Execute</span><span lang="es">Ejecutar</span></h3>
-          <p><span lang="en">Stay involved through execution: coaching the team, joining key client conversations, tracking results.</span><span lang="es">Acompañar la ejecución: coaching al equipo, participación en conversaciones clave con clientes y seguimiento de resultados.</span></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHO + ABOUT -->
+  <!-- 4. WHO + ABOUT -->
   <section class="who" id="who" aria-labelledby="who-title">
     <div class="container who-grid">
       <div>
-        <div class="eyebrow"><span lang="en">Who we work with</span><span lang="es">Con quién trabajamos</span></div>
+        <div class="eyebrow"><svg class="wave" viewBox="0 0 44 12" aria-hidden="true"><path d="M1 9 C10 9 13 3 22 3 S34 9 43 5"/></svg><span lang="en">Who we work with</span><span lang="es">Con quién trabajamos</span></div>
         <h2 id="who-title"><span lang="en">From founder-led sales to a commercial engine that scales.</span><span lang="es">De la venta liderada por el fundador a un motor comercial que escala.</span></h2>
         <p style="margin-top:24px"><span lang="en">Founders, CEOs and revenue leaders of software development, nearshore and IT services companies, typically from 50 to 500 people.</span><span lang="es">Fundadores, CEOs y líderes de revenue de empresas de desarrollo de software, nearshore y servicios IT, normalmente de 50 a 500 personas.</span></p>
         <p><span lang="en">In many of these firms, the founder is still running sales, key accounts and pricing. That got the company here, but it doesn't scale. This is the moment to bring in seasoned commercial leadership, without the cost and risk of a full-time executive hire.</span><span lang="es">En muchas de estas empresas, el fundador sigue manejando las ventas, las cuentas clave y el pricing. Eso trajo a la empresa hasta acá, pero no escala. Es el momento de sumar liderazgo comercial con experiencia, sin el costo ni el riesgo de una contratación ejecutiva full-time.</span></p>
@@ -343,14 +283,13 @@
       <aside class="about" aria-labelledby="about-title">
         <div class="eyebrow"><span lang="en">About MECA</span><span lang="es">Sobre MECA</span></div>
         <h3 id="about-title"><span lang="en">Operator experience, not theory.</span><span lang="es">Experiencia de operación, no teoría.</span></h3>
-        <p><span lang="en">MECA is built on two decades of operating experience inside technology services, from engineering and delivery to leading large client portfolios across North America and Europe.</span><span lang="es">MECA se apoya en dos décadas de experiencia operando dentro de los servicios de tecnología, desde ingeniería y delivery hasta liderar grandes carteras de clientes en Norteamérica y Europa.</span></p>
-        <p><span lang="en">We have sat in the QBRs, priced the deals and handled the escalations. Our advice comes from having done the work.</span><span lang="es">Estuvimos en los QBRs, armamos los precios y resolvimos los escalamientos. Nuestra asesoría viene de haber hecho el trabajo.</span></p>
-        <div class="quote"><span lang="en">Ride the next wave of growth.</span><span lang="es">Subite a la próxima ola de crecimiento.</span></div>
+        <p><span lang="en">MECA is built on two decades of operating experience inside technology services, from engineering and delivery to leading large client portfolios across North America and Europe. We have sat in the QBRs, priced the deals and handled the escalations.</span><span lang="es">MECA se apoya en dos décadas de experiencia operando dentro de los servicios de tecnología, desde ingeniería y delivery hasta liderar grandes carteras de clientes en Norteamérica y Europa. Estuvimos en los QBRs, armamos los precios y resolvimos los escalamientos.</span></p>
+        <div class="tagline"><span lang="en">Ride the next wave of growth.</span><span lang="es">Subite a la próxima ola de crecimiento.</span></div>
       </aside>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- 5. CONTACT -->
   <section class="contact dark" id="contact" aria-labelledby="ct-title">
     <div class="container">
       <div class="eyebrow"><span lang="en">Let's talk</span><span lang="es">Conversemos</span></div>
