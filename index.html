@@ -204,7 +204,7 @@
         <span lang="es">Asesoría comercial senior para empresas de software y servicios IT. Ayudamos a equipos directivos a expandir cuentas clave, proteger márgenes y construir un área de Client Services que escale, en Estados Unidos, Europa y América Latina.</span>
       </p>
       <div class="hero-actions">
-        <a class="btn" href="#contact"><span lang="en">Book an intro conversation</span><span lang="es">Agendá una primera conversación</span> <span aria-hidden="true">→</span></a>
+        <a class="btn" href="https://calendar.app.google/ktj532A66obxFgog8" target="_blank" rel="noopener"><span lang="en">Book an intro conversation</span><span lang="es">Agendá una primera conversación</span> <span aria-hidden="true">→</span></a>
         <a class="btn btn-ghost" href="#services"><span lang="en">See how we help</span><span lang="es">Cómo ayudamos</span></a>
       </div>
     </div>
@@ -356,8 +356,8 @@
       <div class="eyebrow"><span lang="en">Let's talk</span><span lang="es">Conversemos</span></div>
       <h2 id="ct-title"><span lang="en">What would profitable growth look like for your business?</span><span lang="es">¿Cómo se vería un crecimiento rentable para tu empresa?</span></h2>
       <p><span lang="en">A 30-minute conversation, no commitment. Tell us where you are and we'll share an honest view of where to start.</span><span lang="es">Una conversación de 30 minutos, sin compromiso. Contanos dónde estás y te damos una mirada honesta de por dónde empezar.</span></p>
-      <a class="btn" id="mail-cta" href="mailto:info@mecaadvisory.com?subject=Intro%20conversation%20%7C%20MECA%20Advisory"><span lang="en">Start the conversation</span><span lang="es">Iniciar la conversación</span> <span aria-hidden="true">→</span></a>
-      <a class="email" href="mailto:info@mecaadvisory.com">info@mecaadvisory.com</a>
+      <a class="btn" href="https://calendar.app.google/ktj532A66obxFgog8" target="_blank" rel="noopener"><span lang="en">Book a 30-minute call</span><span lang="es">Agendá una llamada de 30 minutos</span> <span aria-hidden="true">→</span></a>
+      <a class="email" href="mailto:info@mecaadvisory.com"><span lang="en">Prefer email? </span><span lang="es">¿Preferís escribirnos? </span>info@mecaadvisory.com</a>
     </div>
   </section>
 </main>
@@ -372,12 +372,9 @@
 <script>
   (function(){
     var root=document.documentElement;
-    var mail=document.getElementById('mail-cta');
-    var subjects={en:'Intro conversation | MECA Advisory',es:'Primera conversación | MECA Advisory'};
     function setLang(l){
       root.setAttribute('data-lang',l);root.setAttribute('lang',l);
       document.querySelectorAll('[data-set-lang]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.setLang===l?'true':'false')});
-      mail.href='mailto:info@mecaadvisory.com?subject='+encodeURIComponent(subjects[l]);
       try{localStorage.setItem('meca-lang',l)}catch(e){}
     }
     var saved=null;try{saved=localStorage.getItem('meca-lang')}catch(e){}
